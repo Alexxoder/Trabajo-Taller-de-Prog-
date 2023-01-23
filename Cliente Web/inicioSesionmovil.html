@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="border-bottom border-primary">
+        <div class="container-fluid bg-dark">
+            <nav class="navbar navbar-expand-sm affix">
+                <a class="nav-link" href="#">
+                    <span class="navbar.text h1 text-primary">Turismo<span class="navbar.text h1 text-light">.uy</span></span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container outercont mt-3">
+        <div class="row justify-content-center mt-5">
+            <div class="col-10 col-sm-4">
+                        <form method="post" id="inicioSesion">
+                            <div class="form-group mb-3">
+                                <label for="usuario">NickName o Mail: </label>
+                                <input type="text" class="form-control" name="usuario" id="usuario" placeholder="Ej: eleven11 o eleven11@gmail.com" required>
+                                <div class="valid-feedback">Looks good!</div>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="contrasenia">Contraseña: </label>
+                                <input type="password" class="form-control" name="contrasenia" id="contrasenia" required>
+                            </div>
+                            <div class="rememberpass">
+                                <input type="checkbox" class="form-check-input" name="recordar" id="redordar"> Recordarme
+                            </div>
+                            <div class="row px-2">
+                                <button type="submit" class="btn btn-dark mt-3" name="accederBtn" id="accederBtn">Acceder</button>
+                            </div>
+                        </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

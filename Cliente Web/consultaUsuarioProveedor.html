@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="border-bottom border-primary">
+        <div class="container-fluid">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link fw-semibold" href="#"> Iniciar Sesion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-semibold" href="#"> Alta de Usuario</a>
+                </li>
+            </ul>
+
+            <nav class="navbar navbar-expand-sm affix">
+                <span class="navbar.text h1">Turismo</span>
+                <span class="navbar.text h1 text-primary">.uy</span>
+                <ul class="navbar-nav">
+                    <li class="nav-item m-2">
+                        <a class="nav-link fw-semibold" href="listarusuarios.html">Usuarios</a>
+                    </li>
+                    <li class="nav-item m-2">
+                        <a class="nav-link fw-semibold" href="actividades.html">Actividades</a>
+                    </li>
+                    <li class="nav-item m-2">
+                        <a class="nav-link fw-semibold" href="listarPaquetes.html">Paquetes</a>
+                    </li>
+                    <li class="nav-item m-2">
+                        <a class="nav-link fw-semibold" href="listarSalidas.html">Salidas</a>
+                    </li>
+                </ul>
+                <form class="navbar-form container-fluid" action="#">
+                    <div class="input-group-md flex-grow-1 m-2">
+                        <input class="form-control" type="text" placeholder="Buscar">
+                    </div>
+                    <button class="btn btn-primary" type="submit">Buscar</button>
+                </form>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="container-fluid mt-3">
+        <div class="row">
+            <!--  aca se ponen los filtros de departamentos y categorias y navegacion -->
+            <div class="col-3 ">
+                <div class="list-group d-flex ">
+                    <h5 class="list-group-item ">Navegacion</h5>
+                    <a href="index.html" class="list-group-item btn btn-primary ">Inicio</a>
+                    <a href="listarusuarios.html" class="list-group-item btn btn-primary ">Usuarios</a>
+                </div>
+                <br>
+                <button class="btn btn-secondary w-100">Cerrar Sesion...Proximamente</button>
+            </div>
+
+
+            <div class="col-9">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="https://c.wallhere.com/photos/55/39/safe_house_cia_agent_tobin_frost_denzel_washington-584127.jpg!d" class="img-fluid rounded">
+                    </div>
+                    <div class="col-6">
+                        <h2>Washington</h2>
+                        <h3>washington/washington@turismorocha.gub.uy</h3>
+                        <h4>ultimo ingreso</h4>
+                    </div>
+                    <div class="col-9">
+
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-perfil-tab" data-bs-toggle="pill" data-bs-target="#pills-perfil" type="button" role="tab" aria-controls="pills-perfil" aria-selected="true">Perfil</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-actividades-tab" data-bs-toggle="pill" data-bs-target="#pills-actividades" type="button" role="tab" aria-controls="pills-actividades" aria-selected="false">Actividades</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-perfil" role="tabpanel" aria-labelledby="pills-perfil-tab">
+                                <h6>Nickname: </h6>
+                                <p>washington</p>
+                                <h6>Nombre: </h6>
+                                <p>Washington</p>
+                                <h6>Apellido: </h6>
+                                <p>Rocha</p>
+                                <h6>Email: </h6>
+                                <p>washington@turismorocha.gub.uy</p>
+                                <h6>Fecha De Nacimiento: </h6>
+                                <p>14/09/1970</p>
+                                <button class="btn btn-primary">Editar Datos</button>
+                            </div>
+                            <div class="tab-pane fade" id="pills-actividades" role="tabpanel" aria-labelledby="pills-actividades-tab">
+                                <div class="col">
+                                    <!-- aca se muestran las actividades -->
+                                    <div class="row">
+                                        <div class="list-group">
+                                            <div class="list-group-item">
+                                                <div class="row">
+                                                    <div class="col-9">
+                                                        <a class=" col-6 link-dark text-decoration-none" href="#">
+                                                            <div class="row">
+                                                                <div class="col-6">
+                                                                    <img class="img-fluid " src="https://s3.amazonaws.com/turismorocha/eventos/2569/cover/degusta-048968300-1659558891.jpg " alt=" ">
+                                                                </div>
+                                                                <div class="col actividad ">
+                                                                    <h3>Degusta</h3>
+                                                                    <p>Festival gastronómico de productos locales en Rocha</p>
+                                                                    <h6>Costo:</h6>
+                                                                    <p>800$</p>
+                                                                    <h6>Duración:</h6>
+                                                                    <p>3 horas</p>
+                                                                    <h6>Ciudad:</h6>
+                                                                    <p>Rocha</p>
+                                                                    <h6>Fecha de Alta:</h6>
+                                                                    <p>20/7/2022</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <h3>Salidas</h3>
+                                                        <!-- salidas -->
+                                                        <a class=" col-6 link-dark text-decoration-none" href="#">
+                                                            <div class="row">
+                                                                <div class="">
+                                                                    <img class=" img-fluid " src="https://city.woow.com.uy/media/catalog/product/cache/dcf64a24127a43d9ce9fe76e3e5f8061/n/u/nueva2_3_1.jpg" alt=" ">
+                                                                </div>
+                                                                <div class="col actividad ">
+                                                                    <h5>Degusta Agosto</h5>
+                                                                </div>
+
+                                                            </div>
+                                                        </a>
+                                                        <a class="col-6 link-dark text-decoration-none" href="#">
+                                                            <div class="row">
+                                                                <div class="">
+                                                                    <img class="overflow-auto img-fluid " src="https://s3.amazonaws.com/turismorocha/operadores/1/med/bahia-resto-053888900-1458674720.JPG" alt=" ">
+                                                                </div>
+                                                                <div class="col actividad ">
+                                                                    <h5>Degusta Septiembre</h5>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="list-group-item">
+                                                <div class="row">
+                                                    <div class="col-9">
+                                                        <a class=" col-6 link-dark text-decoration-none" href="#">
+                                                            <div class="row">
+                                                                <div class="col-6">
+                                                                    <img class="img-fluid " src="https://s3.amazonaws.com/turismorocha/eventos/2579/cover/teatro-con-sabores-008950900-1659638152.jpg " alt=" ">
+                                                                </div>
+                                                                <div class="col actividad ">
+                                                                    <h3>Teatro con Sabores</h3>
+                                                                    <p>En el mes aniversario del Club Deportivo Unión de Rocha te invitamos a una merienda deliciosa.</p>
+                                                                    <h6>Costo:</h6>
+                                                                    <p>500$</p>
+                                                                    <h6>Duración:</h6>
+                                                                    <p>3 horas</p>
+                                                                    <h6>Ciudad:</h6>
+                                                                    <p>Rocha</p>
+                                                                    <h6>Fecha de Alta:</h6>
+                                                                    <p>21/7/2022</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <!-- salidas -->
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+                                            <a class=" col-6 list-group-item " href="# ">
+                                                <div class="row ">
+                                                    <div class="col-3 ">
+
+                                                    </div>
+                                                    <div class="col-3 actividad ">
+
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

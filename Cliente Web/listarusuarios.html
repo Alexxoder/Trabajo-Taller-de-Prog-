@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="border-bottom border-primary">
+        <div class="container-fluid">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link fw-semibold" href="#"> Iniciar Sesion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-semibold" href="#"> Alta de Usuario</a>
+                </li>
+            </ul>
+
+            <nav class="navbar navbar-expand-sm affix">
+                <span class="navbar.text h1">Turismo</span>
+                <span class="navbar.text h1 text-primary">.uy</span>
+                <ul class="navbar-nav">
+                    <li class="nav-item m-2">
+                        <a class="nav-link fw-semibold" href="listarusuarios.html">Usuarios</a>
+                    </li>
+                    <li class="nav-item m-2">
+                        <a class="nav-link fw-semibold" href="actividades.html">Actividades</a>
+                    </li>
+                    <li class="nav-item m-2">
+                        <a class="nav-link fw-semibold" href="listarPaquetes.html">Paquetes</a>
+                    </li>
+                    <li class="nav-item m-2">
+                        <a class="nav-link fw-semibold" href="listarSalidas.html">Salidas</a>
+                    </li>
+                </ul>
+                <form class="navbar-form container-fluid" action="#">
+                    <div class="input-group-md flex-grow-1 m-2">
+                        <input class="form-control" type="text" placeholder="Buscar">
+                    </div>
+                    <button class="btn btn-primary" type="submit">Buscar</button>
+                </form>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container-fluid mt-3">
+        <div class="row">
+            <!--  aca se ponen los filtros de departamentos y categorias y navegacion -->
+            <div class="col-3 ">
+                <div class="list-group d-flex ">
+                    <h5 class="list-group-item ">Navegacion</h5>
+                    <a href="index.html" class="list-group-item btn btn-primary ">Inicio</a>
+                    <a href="#" class="list-group-item btn btn-primary ">Mi Perfil...Proximamente</a>
+                </div>
+                <br>
+                <button class="btn btn-secondary w-100">Cerrar Sesion...Proximamente</button>
+            </div>
+            <div class="col-9">
+                <div>
+                    <h1>Consulta De Usuario</h1>
+                </div>
+
+                <div class="list-group">
+                    <div class="row">
+                        <div class="col">
+                            <a href="consultaUsuarioTurista.html" target="_self" class="list-group-item list-group-item-action">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img class="img-fluid" src="https://pbs.twimg.com/media/EOHAP9zWoAsnkiM?format=jpg&name=small">
+                                    </div>
+                                    <div class="col">
+                                        <h5 class="mb-1">lachiqui</h5>
+                                        <h6 class="mb-1">Rosa María</h6>
+                                        <h6 class="mb-1">Martinez</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="consultaUsuarioTurista.html" target="_self" class="list-group-item list-group-item-action">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img class="img-fluid" src="https://ca-times.brightspotcdn.com/dims4/default/2413d30/2147483647/strip/true/crop/720x1024+0+0/resize/840x1195!/format/webp/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F9b%2Fe3%2F0973ea3441e396271b457c1e0b31%2Fap22146719572803.jpg">
+                                    </div>
+                                    <div class="col-2">
+                                        <h5 class="mb-1">isabelita</h5>
+                                        <h6 class="mb-1">Elizabeth</h6>
+                                        <h6 class="mb-1">Windsor</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <a href="consultaUsuarioTurista.html" target="_self" class="list-group-item list-group-item-action">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img class="img-fluid" src="https://es.web.img2.acsta.net/c_310_420/pictures/14/01/20/09/27/059623.jpg">
+                                    </div>
+
+                                    <div class="col-2">
+                                        <h5 class="mb-1">anibal</h5>
+                                        <h6 class="mb-1">Aníbal</h6>
+                                        <h6 class="mb-1">Lecter</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="consultaUsuarioProveedor.html" target="_self" class="list-group-item list-group-item-action">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img class="img-fluid" src="https://c.wallhere.com/photos/55/39/safe_house_cia_agent_tobin_frost_denzel_washington-584127.jpg!d">
+                                    </div>
+                                    <div class="col-2">
+                                        <h5 class="mb-1">washington</h5>
+                                        <h6 class="mb-1">Washington</h6>
+                                        <h6 class="mb-1">Rocha</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <a href="consultaUsuarioProveedor.html" target="_self" class="list-group-item list-group-item-action">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img class="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI6iVebQtM32FoIZFXUPSIhJlQo2asvOouzw&usqp=CAU">
+                                    </div>
+                                    <div class="col-2">
+                                        <h5 class="mb-1">eldiez</h5>
+                                        <h6 class="mb-1">Pablo</h6>
+                                        <h6 class="mb-1">Bengochea</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="consultaUsuarioProveedor.html" target="_self" class="list-group-item list-group-item-action">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img class="img-fluid" src="https://pbs.twimg.com/media/EmLg8pkXYAAkuGY?format=jpg&name=small">
+                                    </div>
+                                    <div class="col-2">
+                                        <h5 class="mb-1">meche</h5>
+                                        <h6 class="mb-1">Mercedes</h6>
+                                        <h6 class="mb-1">Venn</h6>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>

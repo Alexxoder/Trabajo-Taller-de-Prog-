@@ -1,0 +1,141 @@
+package src.logica.datatypes;
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.Map;
+
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import src.logica.clases.EstadoActividad;
+
+@XmlAccessorType(XmlAccessType.FIELD)
+public class DTActividadTuristica {
+	//atributos
+	private String nombre, descripcion, ciudad, departamento;
+	private int duracion;
+	private int costo;
+	private LocalDate fechaDeAlta;
+	private Map<String, DTSalidaTuristica> salidas;
+	private EstadoActividad estado;
+	private String imagen;
+	private ArrayList<DTSalidaTuristica> listaSalidas;
+	private String fechaDeAltaString;
+	
+	//creates
+	public DTActividadTuristica() {
+		
+	}
+	
+	public DTActividadTuristica(String nombre, String descripcion, String ciudad, int duracion, int costo, LocalDate fechaDeAlta, String departamento, Map<String, DTSalidaTuristica> salidas, EstadoActividad estado, String imagen) {
+		this.nombre = nombre;
+		this.descripcion = descripcion;
+		this.ciudad = ciudad;
+		this.duracion = duracion;
+		this.costo = costo;
+		this.fechaDeAlta = fechaDeAlta;
+		this.departamento = departamento;
+		this.salidas = salidas;
+		this.estado = estado;
+		this.imagen = imagen;
+		this.fechaDeAltaString = fechaDeAlta.toString();
+		this.listaSalidas = new ArrayList<DTSalidaTuristica>(salidas.values());
+	}
+	
+	//getters
+	
+	public String getNombre() {
+		return nombre;
+	}
+	
+	public String getDescripcion() {
+		return descripcion;
+	}
+	
+	public String getCiudad() {
+		return ciudad;
+	}
+	
+	public int getDuracion() {
+		return duracion;
+	}
+	
+	public int getCosto() {
+		return costo;
+	}
+	
+	public LocalDate getfechaDeAlta() {
+		return fechaDeAlta;
+	}
+	
+	public String getDepartamento() {
+		return departamento;
+	}
+	
+	public Map<String, DTSalidaTuristica> getSalidas() {
+		return salidas;
+	}
+	
+	public EstadoActividad getEstado() {
+		return estado;
+	}
+	
+	public String getImagen() {
+		return imagen;
+	}
+	
+	//setters
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	
+	public void setDescripcion(String descripcion) {
+		this.descripcion = descripcion;
+	}
+	
+	public void setDuracion(int duracion) {
+		this.duracion = duracion;
+	}
+	
+	public void setCosto(int costo) {
+		this.costo = costo;
+	}
+	
+	public void setCiudad(String ciudad) {
+		this.ciudad = ciudad;
+	}
+	
+	public void setFechaAlta(LocalDate fecha) {
+		this.fechaDeAlta = fecha;
+	}
+	
+	public void setDepartamento(String departamento) {
+		this.departamento = departamento;
+	}
+	
+	public void setSalidas(Map<String, DTSalidaTuristica> salidas) {
+		this.salidas = salidas;
+	}
+	
+	public void setEstadoActividad(EstadoActividad estado) {
+		this.estado = estado;
+	}
+	
+	public void setImagen(String imagen) {
+		this.imagen = imagen;
+	}
+
+	public ArrayList<DTSalidaTuristica> getListaSalidas() {
+		return listaSalidas;
+	}
+
+	public void setListaSalidas(ArrayList<DTSalidaTuristica> listaSalidas) {
+		this.listaSalidas = listaSalidas;
+	}
+
+	public String getFechaDeAltaString() {
+		return fechaDeAltaString;
+	}
+
+	public void setFechaDeAltaString(String fechaDeAltaString) {
+		this.fechaDeAltaString = fechaDeAltaString;
+	}
+}

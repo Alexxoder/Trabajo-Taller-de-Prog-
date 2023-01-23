@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inscripcion A Salida Turistica</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="border-bottom border-primary">
+        <div class="container-fluid">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link fw-semibold" href="#"> Iniciar Sesion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-semibold" href="#"> Alta de Usuario</a>
+                </li>
+            </ul>
+
+            <nav class="navbar navbar-expand-sm affix">
+                <span class="navbar.text h1">Turismo</span>
+                <span class="navbar.text h1 text-primary">.uy</span>
+                <ul class="navbar-nav">
+                    <li class="nav-item m-2">
+                        <a class="nav-link fw-semibold" href="listarusuarios.html">Usuarios</a>
+                    </li>
+                    <li class="nav-item m-2">
+                        <a class="nav-link fw-semibold" href="actividades.html">Actividades</a>
+                    </li>
+                    <li class="nav-item m-2">
+                        <a class="nav-link fw-semibold" href="listarPaquetes.html">Paquetes</a>
+                    </li>
+                    <li class="nav-item m-2">
+                        <a class="nav-link fw-semibold" href="listarSalidas.html">Salidas</a>
+                    </li>
+                </ul>
+                <form class="navbar-form container-fluid" action="#">
+                    <div class="input-group-md flex-grow-1 m-2">
+                        <input class="form-control" type="text" placeholder="Buscar">
+                    </div>
+                    <button class="btn btn-primary" type="submit">Buscar</button>
+                </form>
+            </nav>
+        </div>
+    </header>
+
+
+
+
+    <div class="container-fluid mt-3">
+        <div class="row">
+            <!--  aca se pone la navegacion-->
+            <div class="col-3 ">
+                <div class="list-group d-flex ">
+                    <h5 class="list-group-item ">Navegacion</h5>
+                    <a href="listarSalidas.html" class="list-group-item btn btn-primary ">Salidas</a>
+                    <a href="index.html" class="list-group-item btn btn-primary ">Inicio</a>
+                </div>
+                <br>
+                <button class="btn btn-secondary w-100">Cerrar Sesion...Proximamente</button>
+            </div>
+
+            <div class="col-9">
+                <form class="form-control" action="#" method="get">
+                    <h2>Inscripcion A Salida Turistica</h2>
+                    <div class="row">
+                        <div class="col">
+                            <label class="form-label" for="departamentos">Seleccione un departamento</label>
+                            <select class="form-select" name="Departamentos" id="departamentos">
+                                <option value="Rocha">Rocha</option>
+                                <option value="Montevideo">Montevideo</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label class="form-label" for="Categorias">o una categoria</label>
+                            <select class="form-select" name="Categorias" id="Categorias">
+                                <option value="Gatronomia">Gatronomia</option>
+                                <option value="Cultura">Cultura</option>
+                            </select>
+                        </div>
+                    </div>
+                    <label class="form-label" for="actividades">Seleccione una Actividad</label>
+                    <select class="form-select" name="Actividades" id="actividades">
+                        <option value="Degusta">Degusta</option>
+                    </select>
+
+                    <!-- datos de las salidas -->
+                    <hr>
+                    <h4>Salidas</h4>
+                    <div class="row">
+                        <div class="col">
+                            <label class="form-label">Nombre salida:</label>
+                            <output>Degusta Agosto</output>
+                        </div>
+                        <div class="col">
+                            <label>Fecha salida:</label>
+                            <output>20/08/2022</output>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label class="form-label">Hora salida:</label>
+                            <output>17hs</output>
+                        </div>
+                        <div class="col">
+                            <label>Turistas Maximos:</label>
+                            <output>20</output>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label class="form-label">Lugar:</label>
+                            <output>Sociedad Agropecuaria de Rocha</output>
+                        </div>
+
+                    </div>
+                    <hr>
+                    <!-- continua ingresando datos -->
+                    <div class="row">
+                        <div class="col">
+                            <label class="form-label" for="salidas">seleccione la salida:</label>
+                            <select class="form-select" name="salidas" id="salidas">
+                                <option value="Degusta Agosto">Degusta Agosto</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label class="form-label" for="paquetes">paquetes disponibles</label>
+                            <select class="form-select" name="paquetes" id="paquetes">
+                                <option value="ninguno">ninguno</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label class="form-label col" for="cantidadTursitas">Cantidad de participantes</label>
+                        <input class="form-control" type="number">
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col">
+                            <button class="btn btn-primary" type="submit">Aceptar</button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-primary" type="reset">Cancelar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>

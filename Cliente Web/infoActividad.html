@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info de Actividad</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="border-bottom border-primary">
+        <div class="container-fluid">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link fw-semibold" href="#"> Iniciar Sesion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-semibold" href="#"> Alta de Usuario</a>
+                </li>
+            </ul>
+
+            <nav class="navbar navbar-expand-sm affix">
+                <span class="navbar.text h1">Turismo</span>
+                <span class="navbar.text h1 text-primary">.uy</span>
+                <ul class="navbar-nav">
+                    <li class="nav-item m-2">
+                        <a class="nav-link fw-semibold" href="listarusuarios.html">Usuarios</a>
+                    </li>
+                    <li class="nav-item m-2">
+                        <a class="nav-link fw-semibold" href="actividades.html">Actividades</a>
+                    </li>
+                    <li class="nav-item m-2">
+                        <a class="nav-link fw-semibold" href="listarPaquetes.html">Paquetes</a>
+                    </li>
+                    <li class="nav-item m-2">
+                        <a class="nav-link fw-semibold" href="listarSalidas.html">Salidas</a>
+                    </li>
+                </ul>
+                <form class="navbar-form container-fluid" action="#">
+                    <div class="input-group-md flex-grow-1 m-2">
+                        <input class="form-control" type="text" placeholder="Buscar">
+                    </div>
+                    <button class="btn btn-primary" type="submit">Buscar</button>
+                </form>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container-fluid mt-3">
+        <div class="row">
+            <!--  aca se ponen los filtros de departamentos y categorias -->
+            <div class="col-3 ">
+                <div class="list-group d-flex ">
+                    <h5 class="list-group-item ">Navegacion</h5>
+                    <a href="index.html" class="list-group-item btn btn-primary ">Inicio</a>
+                    <a href="actividades.html" class="list-group-item btn btn-primary ">Actividades</a>
+                </div>
+                <br>
+                <button class="btn btn-secondary w-100">Cerrar Sesion...Proximamente</button>
+            </div>
+
+            <div class="col-9">
+                <!-- aca se muestran la actividad -->
+                <div class="row">
+                    <div class="list-group">
+                        <div class="list-group-item">
+                            <div class="row">
+                                <div class="col">
+                                    <a class=" col-6 link-dark text-decoration-none" href="#">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <img class="img-fluid " src="https://s3.amazonaws.com/turismorocha/eventos/2569/cover/degusta-048968300-1659558891.jpg " alt=" ">
+                                            </div>
+                                            <div class="col actividad ">
+                                                <h3>Degusta</h3>
+                                                <p>Festival gastronómico de productos locales en Rocha</p>
+                                                <p>Duración: 3 Horas</p>
+                                                <p>Costo: $800</p>
+                                                <p>Ciudad: Rocha</p>
+                                                <p>Fecha de Alta: 20/7/2022</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3>Salidas</h3>
+                    <!-- salidas -->
+                    <a class="link-dark text-decoration-none" href="#">
+                        <div class="row">
+                            <div class="col-4">
+                                <img class=" img-fluid " src="https://city.woow.com.uy/media/catalog/product/cache/dcf64a24127a43d9ce9fe76e3e5f8061/n/u/nueva2_3_1.jpg" alt=" ">
+                            </div>
+                            <div class="col-4 actividad ">
+                                <h5>Degusta Agosto</h5>
+                                <p>Fecha: 20/08/2022</p>
+                                <p>Hora: 17hs</p>
+                                <p>Lugar: Sociedad Agropecuaria de Rocha</p>
+                            </div>
+
+                        </div>
+                    </a>
+                    <a class="link-dark text-decoration-none" href="#">
+                        <div class="row">
+                            <div class="col-4">
+                                <img class="overflow-auto img-fluid " src="https://s3.amazonaws.com/turismorocha/operadores/1/med/bahia-resto-053888900-1458674720.JPG" alt=" ">
+                            </div>
+                            <div class="col-4 actividad ">
+                                <h5>Degusta Septiembre</h5>
+                                <p>Fecha: 03/09/2022</p>
+                                <p>Hora: 17hs</p>
+                                <p>Sociedad Agropecuaria de Rocha</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
